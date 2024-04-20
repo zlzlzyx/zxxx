@@ -1,0 +1,64 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/index/index",
+    "pages/me/me",
+    "pages/admin/admin",
+    "pages/lists/lists",
+    "pages/submit/submit",
+    "pages/fbclass/fbclass",
+    "pages/detail/detail",
+    "pages/register/register",
+    "pages/user/user",
+    "pages/tie/tie",
+    "pages/class/class",
+    "pages/classdetail/classdetail",
+    "pages/shenhe/shenhe",
+    "pages/updateclass/updateclass",
+    "pages/myTie/myTie",
+    "pages/Info/Info",
+    "pages/uppwd/uppwd",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fc92d0",
+    "navigationBarTitleText": "在线交流论坛",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#626567",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/image/首页.png",
+        "selectedIconPath": "/image/首页focus.png"
+      },
+      {
+        "pagePath": "pages/submit/submit",
+        "text": "发帖",
+        "iconPath": "/image/发帖.png",
+        "selectedIconPath": "/image/发帖focuspng.png"
+      },   
+      {
+        "pagePath": "pages/lists/lists",
+        "text": "学习资源",
+        "iconPath": "/image/资料.png",
+        "selectedIconPath": "/image/资料focus.png"
+      },   
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/image/我的.png",
+        "selectedIconPath": "/image/我的focuspng.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

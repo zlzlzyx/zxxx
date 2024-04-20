@@ -1,0 +1,161 @@
+/* pages/user/user.wxss */
+/* @import "/image/font/iconfont.wxss"; */
+page{
+  background: -webkit-linear-gradient(top,rgb(255, 199, 227),#fdc0e4,white);
+}
+/* 返回顶部 */
+.goTop{
+  height: 80rpx;
+  width: 80rpx;
+  position: fixed;
+  bottom: 50rpx;
+  background: rgba(0,0,0,.3);
+  right: 30rpx;
+  border-radius: 50%;
+}
+
+
+.blog-block{
+  margin-bottom: 30rpx;
+  padding: 20rpx;
+  width:95%;
+}
+
+.blog-card {
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 30rpx;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  background-color: rgb(253, 250, 251);
+  border-radius: 6rpx;
+}
+
+.blog-item {
+  width: 95%;
+}
+
+.blog-user{
+  display: flex;
+	flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  width: 95%;
+  padding-top: 10rpx;
+}
+.avatar {
+	overflow: hidden;
+	width: 80rpx;
+	height: 80rpx;
+	flex-shrink: 0;
+	margin-right: 16rpx;
+  border-radius: 50%;
+}
+
+.username {
+	color: #5a6990;
+	font-weight: bold;
+  font-size: 16px;
+  flex: 1;
+}
+
+.blog {
+  width: 100%;
+	font-size: 32rpx;
+	margin: 20rpx 0rpx;
+}
+
+.blog-text {
+	color: #000;
+}
+.avatar {
+	overflow: hidden;
+	width: 80rpx;
+	height: 80rpx;
+	flex-shrink: 0;
+	margin-right: 16rpx;
+  border-radius: 50%;
+}
+.btn
+{
+  background-color: rgb(255, 237, 244);
+}
+.icon-share {
+  height:20px;
+	margin-top: 15rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.image-block image {
+	width: 100%;
+	border-radius: 5rpx;
+}
+
+.share-btn-block {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+  flex-direction: row;
+  margin: 0rpx;
+  margin-top: 30rpx;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #999999;
+}
+.desc{
+  width:90%;
+}
+.desc text{
+  margin-right: 10px;
+}
+.sousuokuang {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 193, 229);
+}
+.sousuo {
+  width: 92%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+.shurukuang {
+  width: 80%;
+  height: 64rpx;
+  border-radius: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+.shurukuang input {
+  width: 90%;
+  height: 100%;
+  font-size: 32rpx;
+}
+.sousuo_anniu {
+  width: 20%;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sousuo_anniu text {
+  font-size: 30rpx;
+}
+

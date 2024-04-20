@@ -1,0 +1,14 @@
+<!--pages/uppwd/uppwd.wxml-->
+  <view class="content">
+  <view class="account">
+    <view class="title">旧密码：</view>
+    <view class="number"><input name="pssword"  placeholder="请输入密码" placeholder-style="color:#999999;" value="{{password}}"/></view>
+  </view>
+  <view class="hr"></view>
+  <view class="account">
+    <view class="title">新密码：</view>
+    <view class="number"><input name="password" bindinput="GetnewpassW"   placeholder="  请输入密码" password placeholder-style="color:#999999;" placeholder-class="holder"/></view>
+  </view>
+  <view class="hr"></view>
+  <button class ="btn" bindtap="updataP" id="btn" form-type="sumbit"><text>修改</text></button>
+</view>

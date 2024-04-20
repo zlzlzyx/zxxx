@@ -1,0 +1,44 @@
+<!--pages/register/register.wxml-->
+<!-- pages/register/register.wxml  -->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="content" style="width: 676rpx; height: 838rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+    <view class="hr"></view>
+    <view class="role" bindtap="upload" bindinput ="GetImg" >
+      <image src="{{avatar}}" mode=""/>
+    </view>
+    <view class="inputs"></view>
+    <view class="item">
+      <input type="text" name="user" bindinput ="GetuserN" placeholder="请输入用户名" placeholder-class="holder" bindblur="accountblur"/>
+    </view>
+
+    <view class="item flex">
+      <input type="text" password name="password" bindinput="GetpassW" placeholder="请输入密码" placeholder-class="holder"/>
+    </view>
+    <view class="item flex">
+      <input type="text" password name="repassword" bindinput="GetrepassW" placeholder="请输入确认密码" placeholder-class="holder"/>
+    </view>
+    <view class="mobileInfo">
+      <view class="item mobile">
+        <input type="text" name="mobile" bindinput="GetPhone" placeholder="请输入手机号" placeholder-class="holder"/>
+      </view>
+    </view>
+    <view class="item flex">
+      <input type="text"  name="isM" bindinput="GetisM" placeholder="是否为管理员请输入true或者false" placeholder-class="holder"/>
+    </view>
+<!-- 
+    <view class="account">
+      <input type="text" name="ismessage" />是否为管理员
+    <radio-group class="ite"  bindinput="GetisM">
+      <radio type="text">true</radio>
+      <radio type="text">false</radio>
+    </radio-group>
+  </view> -->
+    <button class ="btn" bindtap="Goregister" id="btn" form-type="sumbit"><text>注册</text></button>
+    <view class="xieyi">
+      <text class="agree">注册则视为同意</text>
+      <text class="opinion">《用户注册协议》</text>
+      <text>及</text>
+      <text class="opinion">《隐私政策》</text>
+    </view>
+  </view>
+</form>

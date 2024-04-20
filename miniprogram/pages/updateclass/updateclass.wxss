@@ -1,0 +1,38 @@
+/* pages/uppwd/uppwd.wxss */
+.account{
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width:90%;
+}
+.text{
+  width:20%;
+  margin-right: 1rpx;
+  font-weight: bold;
+}
+page{
+  background: -webkit-linear-gradient(top,rgb(255, 199, 227),#fdc0e4,white);
+}
+.form-group{
+  border-bottom: 1rpx solid #3f3e3e;
+  opacity: 0.7;
+}
+.btn{
+  /* border:1px solid #3f3e3e;
+  width: 90%;*/
+  color: #8efad6;
+  width: 90%;
+  color: #3d3c3d;
+  margin-top: 60px;
+  border-radius: 20rpx;
+  border:1px solid #837e7e;
+  box-shadow: 20rpx 20rpx 20rpx 10rpx #9e9a9a;
+}
+.hr{
+  border:1px solid #0f0f0f;
+  opacity: 0.2;
+  width:90%;
+  margin:0 auto;
+}

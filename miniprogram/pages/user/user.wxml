@@ -1,0 +1,39 @@
+<!--pages/user/user.wxml-->
+
+<view class="sousuokuang">
+    <view class="sousuo">
+        <view class="shurukuang">
+            <input type="text" placeholder="搜索" value="" bindinput="GetSearchInput"></input>
+        </view>
+        <view class="sousuo_anniu" bindtap="ToSearch">
+            <text>搜索</text>
+            <icon type="search" size="20"></icon>
+        </view>
+    </view>
+</view>
+  <image src="/image/goTop.png" hidden='{{yincang}}' bindtap="goTop" class="goTop" mode="widthFix"  ></image>
+<view class="container">
+  
+  <!-- 用户展示 -->
+  <view class="blog-block">
+    <block wx:for="{{user}}">
+        <view class="blog-card">
+          <view class="blog-user">
+            <image class="avatar" src="{{item.avatar}}"></image>
+            <view class="username">{{item.username}}</view>
+            <view class="psaaword">密码：{{item.password}}</view>
+            <view class="psaaword">手机号码：{{item.phone}}</view>
+            <button bindtap="removeuser" data-id="{{item._id}}" style="width:64rpx;padding:0rpx;margin:0rpx;">
+              <image class="icon-share" src="../../image/delete.png"></image>
+            </button>
+          </view> 
+        </view>
+    </block>
+  </view>
+  <!-- <view style="margin-top: 30rpx; margin-bottom: 60rpx; position: relative; left: 3rpx; top: 452rpx"> -->
+    <!-- <navigator url="/pages/admin/admin">
+      <button type="primary" form-type="submit">返回</button>
+    </navigator> -->
+
+</view>
+

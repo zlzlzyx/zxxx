@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="blog-user">
+    <image class="avatar" src="{{class1.avatar}}"></image>
+    <view class="username">{{class1.name}}</view>
+    <text class='user-publish-time'>{{class1.time}}</text>
+  </view>
+  <view class="blog-brief">
+    <text style="position: relative; left: 276rpx; top: 0rpx">【{{class1.brief}}】</text>
+  </view>
+  <image wx:if="{{class1.img}}" class="form-image" src="{{class1.img}}" mode="widthFix"></image>
+  
+  <view class="blog-content">
+    <rich-text nodes="{{class1.content}}" style="position: relative; left: 76rpx; top: 0rpx"></rich-text>
+  </view>
+
+</view>

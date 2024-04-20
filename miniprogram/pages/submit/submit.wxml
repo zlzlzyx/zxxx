@@ -1,0 +1,42 @@
+
+<view class="container">
+  <!-- bindsubmit="submitBlog" -->
+  <form >
+    <!-- <view class="form-group">
+      <label class="form-label">头像</label>
+      <input value="{{userInfo.avatar}}" name="avatar" class="form-control" placeholder="请输入头像"/>
+      <button type="primary" bindtap="onGetUserProfile" style="width:100rpx;padding:0rpx;margin:0rpx;">授权</button>
+    </view> -->
+
+    <!-- <view class="form-group">
+      <label class="form-label">用户名</label>
+      <input value="{{userInfo.name}}" name="name" class="form-control" placeholder="请输入用户名"/>
+    </view> -->
+
+    <view class="form-group">
+      <label class="form-label">简介</label>
+      <textarea name="brief" bindinput="getbrief" class="form-control" style="height: 150rpx;" placeholder="请输入简介"></textarea>
+    </view>
+    <view class="form-group">
+    <label class="form-label">内容</label>
+      <textarea name="content" bindinput="getcontent" class="form-control" style="height: 150rpx;" placeholder="请输入内容"></textarea>
+    </view>
+    <view class="form-group">
+      <label class="form-label">图片</label>
+      <image bindtap="removeBlogImage" wx:if="{{blogImg}}" src="{{blogImg}}" mode="widthFix"></image>
+      <image bindtap="upload"  mode="widthFix" class="form-img" src="../../image/图片.png"></image>
+    </view>
+
+    <view style="margin-top:30rpx;margin-bottom:60rpx;">
+      <button class="btn"  bindtap="Gosubmit" form-type="submit">发布</button>
+    </view>
+
+    <!--样例
+    <text>{{blog.brief}}</text>
+    <rich-text nodes="{{blog.content}}"></rich-text>
+    <image src="cloud://moban-0adc39.6d6f-moban-0adc39-1258743806/1652639891703.png"></image>
+    -->
+    
+  </form>
+</view>
+

@@ -1,0 +1,31 @@
+<!--pages/Info/Info.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="content">
+    <view class="hr"></view>
+    <view class="role" bindtap="upload" bindinput ="GetImg" >
+      <image src="{{user.avatar}}" mode=""/>
+    </view>
+    <view class="account">
+    <text class="text">用户名：</text>
+    <view class="item">
+      <input type="text" name="user" bindinput ="GetuserN" placeholder="请输入用户名" placeholder-class="holder" bindblur="accountblur" value="{{user.username}}"/>
+    </view>
+  </view>
+  <view class="account">
+    <text class="text">密码：</text>
+    <view class="item flex">
+      <input type="text" name="password" bindinput="GetpassW" placeholder="请输入密码" placeholder-class="holder" value="{{user.password}}"/>
+    </view>
+  </view>
+  <view class="account">
+    <text class="text">手机号：</text> 
+    <view class="mobileInfo">
+      <view class="item mobile">
+        <input type="text" name="mobile" bindinput="GetPhone" placeholder="请输入手机号" placeholder-class="holder" value="{{user.phone}}"/>
+      </view>
+    </view>
+  </view>
+    <button class ="btn" bindtap="save" id="btn" form-type="sumbit"><text>保存</text></button>
+  </view>
+</form>
+

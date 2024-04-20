@@ -1,0 +1,23 @@
+<!--pages/updateclass/updateclass.wxml-->
+<view class="container">
+  <!-- bindsubmit="submitBlog" -->
+  <form >
+
+    <view class="form-group">
+      <label class="form-label">简介</label>
+      <textarea name="brief" bindinput="getbrief" class="form-control" style="height: 150rpx;" placeholder="请输入简介" value="{{brief}}"></textarea>
+    </view>
+    <view class="form-group">
+    <label class="form-label">内容</label>
+      <textarea name="content" bindinput="getcontent" class="form-control" style="height: 150rpx;" placeholder="请输入内容" value="{{content}}"></textarea>
+    </view>
+    <view class="form-group">
+      <label class="form-label">图片</label>
+      <image bindtap="removeBlogImage" wx:if="{{BlogImg}}" src="{{BlogImg}}" mode="widthFix"></image>
+      <image bindtap="upload" mode="widthFix" class="form-img" src="../../image/图片.png"></image>
+    </view>
+    <view style="margin-top:30rpx;margin-bottom:60rpx;">
+      <button class="btn"  bindtap="updateclass" form-type="submit">修改并保存</button>
+    </view>
+  </form>
+</view>

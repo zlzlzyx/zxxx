@@ -1,0 +1,1 @@
+"D:\app\xiaochenx\xiaocx\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-9gpf3dgs2000d74e --n quickstartFunctions --r --project "D:\app\xiaochenx\project\在线交流学习" --report_first --report

@@ -1,0 +1,40 @@
+<!--pages/login/login.wxml-->
+<form bindsubmit="login">
+  <view class="content">
+  <view class="account">
+    <view class="title">用户名：</view>
+    <view class="number"><input name="username" bindinput="GetuserN" placeholder="请输入用户名" placeholder-style="color:#999999;"/></view>
+  </view>
+  <view class="hr"></view>
+  <view class="account">
+    <view class="title">密     码：</view>
+    <view class="number"><input name="password" bindinput="GetpassW"   placeholder="  请输入密码" password placeholder-style="color:#999999;" placeholder-class="holder"/></view>
+  </view>
+  <view class="hr"></view>
+  <button class ="btn" bindtap="Gologin" id="btn" form-type="sumbit"><text>登录</text></button>
+  <!-- <button class ="btn"  id="btn" open-type="exit"><text>退出</text></button> -->
+  <view class="operate">
+      <view ><navigator url="../register/register" >手机快速注册</navigator></view>
+      <view>找回密码</view>
+  </view>
+</view>
+
+<!-- <view class="content">
+  <view class="account">
+    <view class="title">用户名：</view>
+    <view class="number"><input name="username" bindinput="userNameInput" placeholder="请输入用户名" placeholder-style="color:#999999;"/></view>
+  </view>
+  <view class="hr"></view>
+  <view class="account">
+    <view class="title">密     码：</view>
+    <view class="number"><input name="password" bindinput="passWordInput"   placeholder="  请输入密码" password placeholder-style="color:#999999;" placeholder-class="holder"/></view>
+    <switch type="switch" name="switch"/>
+  </view>
+  <view class="hr"></view>
+  <button class ="btn" bindtap="loginBtnClick" id="btn" form-type="sumbit"><text>登录</text></button>
+  <view class="operate">
+      <view ><navigator url="../register/register" >手机快速注册</navigator></view>
+      <view>找回密码</view>
+  </view>
+</view> -->
+</form>

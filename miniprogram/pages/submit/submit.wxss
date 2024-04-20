@@ -1,0 +1,20 @@
+/* pages/submit/submit.wxss */
+page{
+  background: -webkit-linear-gradient(top,rgb(255, 199, 227,0.7),#fdc0e4,white);
+}
+.form-group{
+  border-bottom: 1rpx solid #3f3e3e;
+  opacity: 0.7;
+}
+.btn{
+  /* border:1px solid #3f3e3e;
+  width: 90%;
+  color: #f192ca;
+  margin-top: 40px; */
+  width: 90%;
+  color: #3d3c3d;
+  margin-top: 40px;
+  border-radius: 20rpx;
+  border:1px solid #837e7e;
+  box-shadow: 20rpx 20rpx 20rpx 10rpx #9e9a9a;
+}

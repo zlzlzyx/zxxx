@@ -1,0 +1,48 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="blog-user">
+    <image class="avatar" src="{{blog.avatar}}"></image>
+    <view class="username">{{blog.name}}</view>
+    <text class='user-publish-time'>{{blog.time}}</text>
+  </view>
+  <view class="blog-brief">
+    <text>【{{blog.brief}}】</text>
+  </view>
+  <image  class="form-image" wx:if="{{blog.img}}"  src="{{blog.img}}" mode="widthFix"></image>
+  <view class="blog-content">
+    <rich-text nodes="{{blog.content}}"></rich-text>
+  </view>
+</view>
+<!-- 评论区实现 -->
+    <view class='top' style="position: relative; left: 0rpx; top: 178rpx">
+      <view bindtap='onTabsItemTap' data-index='{{index}}' class="top-item" style="position: relative; left: 0rpx; top: 483rpx">
+          <text class="{{currentTabsIndex==index?'on':''}}" style="position: relative; left: 0rpx; top: -492rpx">评论区</text>
+      </view>
+    </view>
+    <!-- 显示评论区信息方框 -->
+    <view class='newsBox'>
+    <block  wx:for="{{talks}}"  wx:for-index="talks" wx:key="talks">
+      <view class='container-content'>
+          <view class='user-info'>
+          <!-- 获取用户头像 -->
+            <image class='user-head' src='{{item.photo}}' mode='aspectFill'></image>
+           <!-- 获取用户名和发布时间 -->
+            <view class='user-name-time'>
+              <view class='user-name'>{{item.name}}</view>
+              <view class='user-publish-time'>{{item.time}}</view>
+            </view>
+            </view>
+            <view class='content'>
+            <!-- 显示文本 -->
+              <view style="display:flex;flex-direction:column">
+                <text class='content-text'>{{item.content}}</text>
+              </view>
+             </view>
+            </view>
+    </block>
+    </view>
+    <!-- 发送框 -->
+    <view class="talk">
+    <input class='input' type='text' value='' confirm-type='send' placeholder='说点什么！' bindinput='talkInput' value='{{inputValue}}'></input>
+    <button  class="confirm"  bindtap="submit">确定</button>
+</view>

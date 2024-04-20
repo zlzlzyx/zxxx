@@ -1,0 +1,67 @@
+<!--pages/shenhe/shenhe.wxml-->
+<!--pages/tie/tie.wxml-->
+
+<!-- <view class="sousuokuang">
+    <view class="sousuo">
+        <view class="shurukuang">
+            <input type="text" placeholder="搜索" value="" bindinput="GetSearchInput"></input>
+        </view>
+        <view class="sousuo_anniu" bindtap="ToSearch">
+            <text style="width: 76rpx; height: 40rpx; display: block; box-sizing: border-box">搜索</text>
+            <icon type="search" size="20"></icon>
+        </view>
+        <navigator url="/pages/shenhe/shenhe">
+      <view style="margin-top:30rpx;margin-bottom:60rpx;">
+      <button class="btn" form-type="submit" style="width: 220rpx; height: 80rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">审核</button>
+    </view>
+  </navigator>
+    </view>
+</view> -->
+  <image src="/image/goTop.png" hidden='{{yincang}}' bindtap="goTop" class="goTop" mode="widthFix"  ></image>
+<view class="container">
+  
+  <!-- 博客展示 -->
+  <view class="blog-block">
+    <block wx:for="{{blogs}}">
+      <navigator url="/pages/detail/detail?id={{item._id}}">
+        <view class="blog-card">
+          <view class="blog-user">
+            <image class="avatar" src="{{item.avatar}}"></image>
+            <view class="username">{{item.name}}</view>
+            <button bindtap="shenheBlog" data-id="{{item._id}}" style="width:64rpx;padding:0rpx;margin:0rpx;">
+              <image class="icon-share" src="../../image/待审核.png"></image>
+            </button>
+            <button bindtap="removeBlog" data-id="{{item._id}}" style="width:64rpx;padding:0rpx;margin:0rpx;">
+              <image class="icon-share" src="../../image/delete.png"></image>
+            </button>
+            <button open-type="share" style="width:64rpx;padding:0rpx;margin:0rpx;">
+              <image class="icon-share" src="../../image/share.png"></image>
+            </button>
+          </view>
+          <view class="blog-item">
+            <navigator url="/pages/blogRead/blogRead?id={{item._id}}">
+            <view class="blog">
+              <text class="blog-text">【{{item.brief}}】</text>
+            </view>
+            <view wx:if="{{item.img}}" class="image-block">
+              <image src="{{item.img}}" mode="widthFix" ></image>
+            </view>
+            </navigator>
+          </view>
+          <view class="info">
+           <view class="desc" style="width: 516rpx; height: 64rpx; display: block; box-sizing: border-box">
+              <!-- <text>{{item.commentNumber}}条评论</text> -->
+              <image src="../../image/icon/lz.png" class="image"></image>
+              <text> 楼主:{{item.name}}</text>
+              <text class='user-publish-time'>{{item.time}}</text>
+            <view class="opr"></view>
+          </view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+
+</view>
+
+
